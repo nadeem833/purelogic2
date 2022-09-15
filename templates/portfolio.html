@@ -1,0 +1,51 @@
+{% extends 'basic.html' %}
+{% load static %}
+
+{% block title %}Portfolio {% endblock title %}
+
+{% block body %}
+
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Project which I completed recently in python and Web Develpment are listed below.</p>
+      </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="single-services">
+                <div class="icon">
+                  <br><img src="{% static 'assets/img/real.jpg' %}" alt=""> 
+
+                </div>
+                <h3>Real State Website</h3>
+                <p>The main objective of this application wass to help
+                  the Real Estate Company to display unlimited number of property listings on the website..</p><br>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="single-services">
+                <div class="icon">
+                  <br><img src="{% static 'assets/img/breast.jpg' %}" alt=""> 
+                </div>
+                <h3> Covid-19 and Breast Cancer detection</h3>
+                <p>We develop a deep learning model in Python which predict early breast cancer detection. for Civid-19 design Machine learning model in python </p><br>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="single-services">
+                <div class="icon">
+                  <br><img src="{% static 'assets/img/ecom.jpg' %}" alt=""> 
+                </div>
+                <h3>E-Commerece Website</h3>
+                <p> This was shopping website with three pages and payment system</p><br>
+            </div>
+        </div>
+
+
+{% endblock body %}
